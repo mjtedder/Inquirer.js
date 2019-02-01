@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  },
+  "name": "inquirer",
+  "version": "1.0.0",
+  "description": "Fun with Inquirer Node Package",
+  "main": "index.js",
+  "repository": "https://github.com/mjtedder/Inquirer.js",
+  "author": "Matt Tedder",
+  "license": "MIT"
+}
