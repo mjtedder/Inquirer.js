@@ -16,3 +16,27 @@
 // ========================================================================
 
 const inquirer = require ('inquirer')
+
+const questions = [
+    {
+        type: 'confirm',
+        name: 'pokemonMaster',
+        message: 'Are you a Pokemon Master?',
+        default: 'false'
+    },
+    {
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?',
+    }
+]
+
+inquirer.prompt(questions).then(answers => {
+    if (questions.confirm) {
+        console.log('\nWelcome ' + answers.name)
+        console.log('You are a ' + answers.pokemonMaster + '!')
+    }
+    else {
+        console.log('\nNo problem, ' + answers.name + ', train harder and come back when you are ready.\n')
+    }
+})
