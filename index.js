@@ -32,11 +32,5 @@ const questions = [
 ]
 
 inquirer.prompt(questions).then(answers => {
-    if (questions.confirm) {
         console.log('\nWelcome ' + answers.name)
-        console.log('You are a ' + answers.pokemonMaster + '!')
-    }
-    else {
-        console.log('\nNo problem, ' + answers.name + ', train harder and come back when you are ready.\n')
-    }
 })
