@@ -15,6 +15,15 @@
 
 // ========================================================================
 
+// Let's create a Twitter account for Node.
+
+// - Name
+// - Email address
+// - Password
+//  - Agree to terms of service
+// - List of favorite topic
+// - confirm at the end
+
 const inquirer = require ('inquirer')
 
 const questions = [
@@ -32,5 +41,6 @@ const questions = [
 ]
 
 inquirer.prompt(questions).then(answers => {
+
         console.log('\nWelcome ' + answers.name)
 })
