@@ -28,16 +28,21 @@ const inquirer = require ('inquirer')
 
 const questions = [
     {
-        type: 'confirm',
-        name: 'pokemonMaster',
-        message: 'Are you a Pokemon Master?',
-        default: 'false'
+        type: 'input',
+        name: 'name',
+        message: 'What is your name?'
     },
     {
         type: 'input',
-        name: 'name',
-        message: 'What is your name?',
-    }
+        name: 'email',
+        message: 'What is your email address?'
+    },
+    {
+        type: 'confirm',
+        name: 'terms',
+        message: 'Do you accept the terms of service?',
+        default: 'false'
+    },
 ]
 
 inquirer.prompt(questions).then(answers => {
