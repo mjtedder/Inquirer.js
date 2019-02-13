@@ -24,13 +24,17 @@
 // - List of favorite topic
 // - confirm at the end
 
-const inquirer = require ('inquirer')
+const inquirer = require('inquirer')
 
-const questions = [
-    {
+const questions = [{
         type: 'input',
         name: 'name',
         message: 'What is your name?'
+    },
+    {
+        type: 'input',
+        name: 'handle',
+        message: 'What is your Twitter handle?'
     },
     {
         type: 'input',
@@ -47,5 +51,5 @@ const questions = [
 
 inquirer.prompt(questions).then(answers => {
 
-        console.log('\nWelcome ' + answers.name)
+    console.log('\nWelcome ' + answers.name + '(' + answers.handle + ')')
 })
